@@ -6,35 +6,36 @@
     <link rel="stylesheet" href="src/output.css">
     <title>Relogio Digital</title>
 </head>
-<body class="text-4xl m-0 p-0 font-bold bg-neutral-950 text-white">
+<body class="font-body text-5xl m-0 p-0 font-bold bg-gradient-to-r from-[#85c6fb] via-[#e0c7ff] to-[#f9afee] text-white">
 
-    <div class="text-center m-10">
-        <h1 class="block">Relógio Digital</h1>
-        <p>Data:</p>
+    <!-- Data -->
+    <div class="text-center m-20 text-sky-700 text-3xl sm:text-4xl md:text-5xl lg:text-5xl">
+        <h1 class="m-8">Relógio Digital</h1>
+        <p class="inline">Data:</p>
         <span id="data">00/00/0000</span>
     </div>
 
 
     <!-- Relógio -->
     <div class="flex justify-center items-center m-5">
-        <div class="grid grid-cols-3 justify-center items-center text-center gap-5">
+        <div class="grid grid-cols-3 justify-center items-center text-center gap-5 ">
     
             <!-- Horas -->
-            <div class="grid grid-rows-2 bg-sky-700/40 h-60 p-10 rounded-4xl shadow-md shadow-cyan-800">
+            <div class="grid grid-rows-2 bg-sky-700/40 h-40 sm:h-52 md:h-60 p-4 sm:p-5 md:p-10 rounded-4xl shadow-md shadow-cyan-800 text-2xl sm:text-4xl md:text-5xl">
                 <span id="horas">00</span>
-                <span class="pt-1">Horas</span>
+                <span >Horas</span>
             </div>
 
             <!-- Minutos -->
-            <div class="grid grid-rows-2 bg-sky-700/40 h-60 p-10 rounded-4xl shadow-md shadow-cyan-800">
+            <div class="grid grid-rows-2 bg-sky-700/40 h-40 sm:h-52 md:h-60 p-4 sm:p-5 md:p-10 rounded-4xl shadow-md shadow-cyan-800 text-2xl sm:text-4xl md:text-5xl">
                 <span id="minutos">00</span>
-                <span class="pt-1">Minutos</span>
+                <span>Minutos</span>
             </div>
 
             <!-- Segundos -->
-            <div class="grid grid-rows-2 bg-sky-700/40 h-60 p-10 rounded-4xl shadow-md shadow-cyan-800">
+            <div class="grid grid-rows-2 bg-sky-700/40 h-40 sm:h-52 md:h-60 p-4 sm:p-5 md:p-10 rounded-4xl shadow-md shadow-cyan-800 text-2xl sm:text-4xl md:text-5xl">
                 <span id="segundos">00</span>
-                <span class="pt-1">Segundos</span>
+                <span>Segundos</span>
             </div>
         </div>
     </div>
