@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Relogio Digital</title>
+</head>
+<body class="text-4xl m-0 p-0 font-bold bg-neutral-950 text-white">
+
+    <div class="text-center m-10">
+        <h1 class="block">Relógio Digital</h1>
+        <p>Data:</p>
+        <span id="data">00/00/0000</span>
+    </div>
+
+
+    <!-- Relógio -->
+    <div class="flex justify-center items-center m-5">
+        <div class="grid grid-cols-3 justify-center items-center text-center gap-5">
+    
+            <!-- Horas -->
+            <div class="grid grid-rows-2 bg-sky-700/40 h-60 p-10 rounded-4xl shadow-md shadow-cyan-800">
+                <span id="horas">00</span>
+                <span class="pt-1">Horas</span>
+            </div>
+
+            <!-- Minutos -->
+            <div class="grid grid-rows-2 bg-sky-700/40 h-60 p-10 rounded-4xl shadow-md shadow-cyan-800">
+                <span id="minutos">00</span>
+                <span class="pt-1">Minutos</span>
+            </div>
+
+            <!-- Segundos -->
+            <div class="grid grid-rows-2 bg-sky-700/40 h-60 p-10 rounded-4xl shadow-md shadow-cyan-800">
+                <span id="segundos">00</span>
+                <span class="pt-1">Segundos</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
